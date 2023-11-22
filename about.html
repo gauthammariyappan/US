@@ -33,13 +33,14 @@ function makeApiCall(url) {
 	xhttp.send();	
 }
 document.onreadystatechange = () => {
-	//simulateAJAXCalls
-	makeApiCall("https://jsonplaceholder.typicode.com/todos/1");
-	makeApiCall("https://reqres.in/api/users/2");
-	makeApiCall("script.js");
-	makeApiCall("https://gorest.co.in/public/v2/users");
-	makeApiCall("https://dummyjson.com/products/1");
-	
+	setTimeout(function() {
+  		//simulateAJAXCalls
+		makeApiCall("https://jsonplaceholder.typicode.com/todos/1");
+		makeApiCall("https://reqres.in/api/users/2");
+		makeApiCall("script.js");
+		makeApiCall("https://gorest.co.in/public/v2/users");
+		makeApiCall("https://dummyjson.com/products/1");
+	}, 2000);
 	//simulateJSErrors
 	case1();
 	case2();	
