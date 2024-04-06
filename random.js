@@ -16,10 +16,8 @@ function getRandomName() {
     const randomFirstName = firstName[Math.floor(Math.random() * firstName.length)];
     const randomLastName = lastName[Math.floor(Math.random() * lastName.length)];
     sessionStorage.setItem('randomName', randomFirstName+' '+randomLastName);
-    console.log("random name setted ",sessionStorage.getItem('randomName'));
     return `${randomFirstName} ${randomLastName}`;
   }
-  console.log("random name",sessionStorage.getItem('randomName'));
   return randomName;
   
 }
