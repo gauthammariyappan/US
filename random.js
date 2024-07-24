@@ -23,7 +23,7 @@ function getRandomName() {
 }
 
 function getAppKey(){
-  let appKey = 'afc8510a56cf1004f9024d9d121f2563';
+  let appKey = 'fa4c011b8de19d1ee8e8138ca3047723';
   return appKey;
 
 }
@@ -36,7 +36,7 @@ function getAppKey(){
 		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
 	}
-})(window,document,'//static.site24x7rum.eu/beacon/site24x7rum-min.js?appKey=','s247r',getAppKey());
+})(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r',getAppKey());
 s247r('setWaterfallsSamplingRate',1);
 s247r('userId',getRandomName());
 s247r('recordSession',true);
