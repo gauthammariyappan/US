@@ -52,6 +52,7 @@ function getAppKey(){
 //     "allowedNetworkUrls": allowedUrls//No I18N
 // });
 
+s247r('excludeModules',["errors","events","sessions","recording"])
 
-s247r('excludeModules',["performance","wcv","resource"])
+// s247r('excludeModules',["performance","wcv","resource"])
 // s247r('setWaterfallsSamplingRate',1);
