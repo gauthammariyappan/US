@@ -37,22 +37,21 @@ function getAppKey(){
 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
 	}
 })(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r',getAppKey());
+s247r('setWaterfallsSamplingRate',1);
+s247r('userId',getRandomName());
+const allowedUrls = [
+            /.*/
+        ];
+s247r('recordSession',{//No I18N
+    "trackEvents":true,//No I18N
+    "trackConsoleEvents":true,//No I18N
+    "captureAllWaterfalls":false,//No I18N
+    "maskAllInput":true,//No I18N
+    "maskAllText":true,//No I18N
+    "collectNetworkDetails":true,//No I18N
+    "allowedNetworkUrls": allowedUrls//No I18N
+});
 
-// s247r('userId',getRandomName());
-// const allowedUrls = [
-//             /.*/
-//         ];
-// s247r('recordSession',{//No I18N
-//     "trackEvents":true,//No I18N
-//     "trackConsoleEvents":true,//No I18N
-//     "captureAllWaterfalls":false,//No I18N
-//     "maskAllInput":true,//No I18N
-//     "maskAllText":true,//No I18N
-//     "collectNetworkDetails":true,//No I18N
-//     "allowedNetworkUrls": allowedUrls//No I18N
-// });
-
-s247r('excludeModules',["errors","events","sessions","recording"])
+// s247r('excludeModules',["errors","events","sessions","recording"])
 
 // s247r('excludeModules',["performance","wcv","resource"])
-// s247r('setWaterfallsSamplingRate',1);
