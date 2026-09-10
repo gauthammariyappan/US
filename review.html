@@ -19,6 +19,8 @@ function makeApiCall(url) {
 	xhttp.send();	
 }
 document.onreadystatechange = () => {
+	s247r('addEvent','AddedToCart',{'s247_kpi':[{'cart_value':2}]});
+
 	
 	//simulateAJAXCalls
 	makeApiCall("https://jsonplaceholder.typicode.com/todos/1");
