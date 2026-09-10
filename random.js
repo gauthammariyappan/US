@@ -53,7 +53,6 @@ s247r('recordSession',{//No I18N
     "allowedNetworkUrls": allowedUrls//No I18N
 });
 
-s247r('addEvent','AddedToCart',{'orderId':'ord-123','s247_kpi':[{'cart_value':1}]});
 
 // s247r('excludeModules',["errors","events","sessions","recording"])
 
