@@ -14,7 +14,6 @@
 <script src="case5/func2/func2.min.js"></script>
 
 <script type="text/javascript">	
-	s247r('addEvent','AddedToCart',{'s247_kpi':[{'cart_value':2}]});
 
 function makeApiCall(url) {	
 	var xhttp = new XMLHttpRequest();
@@ -23,7 +22,7 @@ function makeApiCall(url) {
 }
 document.onreadystatechange = () => {
 	s247r('addEvent', 'Products Visited by '+getRandomName());
-	
+
 	//simulateAJAXCalls
 	makeApiCall("https://jsonplaceholder.typicode.com/todos/1");
 	makeApiCall("https://reqres.in/api/users/2");
